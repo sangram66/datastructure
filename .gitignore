@@ -1,0 +1,6 @@
+.DS_Store
+venvDIR/
+target/
+stock_videos/
+final_video.mp4
+voiceover.wav

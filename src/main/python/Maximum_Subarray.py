@@ -1,0 +1,21 @@
+class Solution:
+    def maxSubArray(self, nums) :
+
+        max_sum = nums[0]
+        curr_sum = 0
+
+        for n in nums:
+            if curr_sum < 0:
+                curr_sum = 0
+            curr_sum += n
+            
+            if curr_sum > max_sum:
+                max_sum = curr_sum
+        return max_sum
+    
+if __name__ == '__main__':
+    Sol=Solution()
+    #Input= [-2,1,-3,4,-1,2,1,-5,-4]
+    #Input= [-2,-1,-3,4]
+    Input= [-2,1,-3,4,-1,2,1,-5,4]
+    print (Sol.maxSubArray(Input))
